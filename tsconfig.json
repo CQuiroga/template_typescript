@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true,
+    "noEmit": false,
+    "jsx": "preserve",
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "outDir": ".build",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@server/*": ["./server/*"],
+      "@worker/*": ["./server_worker/*"]
+    },
+    "incremental": true
+  },
+  "include": [],
+  "exclude": ["node_modules", "lib", "dist", ".build", ".next"],
+  "references": [
+    {
+      "path": "./src"
+    },
+    {
+      "path": "./server"
+    },
+    {
+      "path": "./server_worker"
+    }
+  ]
+}
